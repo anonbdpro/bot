@@ -1,6 +1,3 @@
 {
-  "name": "Ruby on Rails",
-  "description": "A template for getting started with the popular Ruby framework.",
-  "website": "http://telegram.me/noobccbot",
-  "repository": "https://github.com/anonbdpro/bot",
+  "image": "heroku/nodejs"
 }
