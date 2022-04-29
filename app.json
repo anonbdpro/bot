@@ -1,3 +1,10 @@
 {
-  "image": "heroku/php"
+  "buildpacks": [
+    {
+      "url": "https://github.com/anonbdpro/bot"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
 }
