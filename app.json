@@ -19,6 +19,3 @@
     "postdeploy": "bundle exec rake db:migrate"
   }
 }
-{
-  "image": "heroku/php"
-}
