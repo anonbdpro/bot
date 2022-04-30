@@ -1,21 +1,71 @@
 {
-  "name": "Ruby on Rails",
-  "description": "A template for getting started with the popular Ruby framework.",
-  "website": "http://rubyonrails.org",
-  "success_url": "/",
-  "addons": ["heroku-postgresql:hobby-dev", "papertrail"],
-  "env": {
-    "RAILS_ENV": "production",
-    "COOKIE_SECRET": {
-            "description": "This gets generated",
-            "generator": "secret"
+    "name": "SDMN Checker Bot",
+    "description": "A Telegram CC Checker Bot with hella lotta features.",
+    "logo": "https://pbs.twimg.com/profile_images/1252291883793027074/RfEhm8yV_400x400.jpg",
+    "keywords": [
+        "Telegram",
+        "Bot",
+        "Modular"
+    ],
+    "website": "https://telegram.me/bitfac",
+    "repository": "https://github.com/anonbdpro/bot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Enter your Bot Token Here. Get it from @Botfather",
+            "value": "",
+            "required": true
+        },
+        "ADMIN_ID": {
+            "description": "Enter the User ID of Admin.",
+            "value": "",
+            "required": true
+        },
+        "LOGS_DUMP_ID": {
+            "description": "Enter the ID of a Group/Channel to store Logs",
+            "value": "",
+            "required": true
+        },
+        "DB_HOST": {
+            "description": "Database URL",
+            "value": "",
+            "required": true
+        },
+        "DB_USERNAME": {
+            "description": "Database Username",
+            "value": "",
+            "required": true
+        },
+        "DB_PASSWORD": {
+            "description": "Database Password",
+            "value": "",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "Database Name",
+            "value": "",
+            "required": true
+        },
+        "ANTISPAM_TIMER": {
+            "description": "AntiSpam Timer Value in seconds",
+            "value":"20",
+            "required": true
+        },
+        "SK_KEYS": {
+            "description": "Enter SK Keys Here. Separate Multiple Keys with ,",
+            "value": "",
+            "required": false
+        },
+        "TIMEZONE": {
+            "description": "Your Preffered TimeZone",
+            "value": "Asia/Kolkata",
+            "required": false
+        }
     },
-    "SETUP_BY": {
-            "description": "Who initiated this setup",
-            "value": "Anonbd"
-    }
-  },
-  "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
-  }
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "image": "heroku/php"
 }
